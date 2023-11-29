@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --PrimaryColor: #fff;
+    --secondaryColor: #D0E1EC;
+    --buttonColor: #264BF2;
+}
+
+.main-container {
+    /* background-color: var(--secondaryColor); */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.qrGenerator {
+    width: 350px;
+    height: 360px;
+    background-color: var(--PrimaryColor);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.qrGenerator .scanner {
+    position: relative;
+}
+
+.qrGenerator .qrScan {
+    height: 45px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.qrGenerator input {
+    width: 280px;
+    height: 60px;
+    /* border: 1px solid var(--buttonColor); */
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.qrGenerator .qrBox {
+    padding: 8px 0px;
+}
+
+.qrGenerator .qrImage>img {
+    height: 180px;
+}
+
+.qrGenerator button {
+    width: 70%;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--buttonColor);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 15px 5px;
+}
+
+
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #264BF2 !important;
+    width: 200px !important;
+    color: #fff;
+    font-size: 1em;
+}
